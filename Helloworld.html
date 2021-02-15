@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1> Angular JS</h1>
+<script src="https://code.angularjs.org/1.6.9/angular.js"></script>
+
+<div ng-app="DemoApp" ng-controller="HelloController">
+
+	Practical Name : <input type="text" ng-model="Name"><br>
+
+	This Practical is {{Name}}
+</div>
+<script>
+	var app = angular.module('DemoApp',[]);
+
+	app.controller('HelloController', function($scope){
+	$scope.Name = "Hello World!";
+	});
+</script>
+
+</body>
+</html>
